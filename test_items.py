@@ -7,7 +7,7 @@ def test_button_basket_available(browser):
     browser.get(link)
 #    time.sleep(30)      # для рецензента
     try:
-        btn_basket = browser.find_element_by_xpath("//*[@id='add_to_basket_form']/button")
+        btn_basket = browser.find_element_by_xpath("//*[@id='add_to_basket_form']/button[@class='btn btn-lg btn-primary btn-add-to-basket']")
     except:
         btn_basket = False
 
